@@ -13,6 +13,6 @@ class ApplicationController < Sinatra::Base
 
   post '/posts' do
     binding.pry
-    @post = POST.create(params)
+    @post = Post.create(params)
   end
 end
