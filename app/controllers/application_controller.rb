@@ -24,6 +24,6 @@ class ApplicationController < Sinatra::Base
 
   get '/posts/:id' do
     binding.pry
-    @post = Post.find(params)
+    @post = Post.find(params[:id])
   end
 end
