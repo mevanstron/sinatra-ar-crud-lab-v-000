@@ -1,4 +1,6 @@
 <form action="posts/:id" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
+  <p>Name: <%= @post.name %></p>
+  <p>Content: <%= @post.content %></p>
 
 </form>
